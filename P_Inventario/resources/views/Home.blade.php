@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../css/main.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="../js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script src="../js/material.min.js" ></script>
 	<script src="../js/sweetalert2.min.js" ></script>
 	<script src="../js/jquery.mCustomScrollbar.concat.min.js" ></script>
@@ -94,7 +94,7 @@
 		<div class="full-width navLateral-bg btn-menu"></div>
 		<div class="full-width navLateral-body">
 			<div class="full-width navLateral-body-logo text-center tittles">
-				<i class="zmdi zmdi-close btn-menu"></i> Inventory 
+				<i class="zmdi zmdi-close btn-menu"></i> INVENTARIO SENA 
 			</div>
 			<figure class="full-width navLateral-body-tittle-menu">
 				<div>
@@ -110,7 +110,7 @@
 			<nav class="full-width">
 				<ul class="full-width list-unstyle menu-principal">
 					<li class="full-width">
-						<a href="home.html" class="full-width">
+						<a href="{{route('/')}}" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-view-dashboard"></i>
 							</div>
@@ -121,7 +121,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="añadir.html" class="full-width btn-subMenu">
+						<a href="{{route('Añadir')}}" class="full-width btn-subMenu">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-case"></i>
 							</div>
@@ -133,23 +133,11 @@
 						
 					</li>
 					
-						<ul class="full-width menu-principal sub-menu-options">
-							<li class="full-width">
-								<a href="admin.html" class="full-width">
-									<div class="navLateral-body-cl">
-										<i class="zmdi zmdi-account"></i>
-									</div>
-									<div class="navLateral-body-cr">
-										ADMINISTRATORS
-									</div>
-								</a>
-							</li>
-
-						</ul>
+						
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="Mostrar.html" class="full-width">
+						<a href="{{route('Mostrar')}}" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-washing-machine"></i>
 							</div>
@@ -160,7 +148,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="Actualizar.html" class="full-width">
+						<a href="{{route('Actualizar')}}" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-shopping-cart"></i>
 							</div>

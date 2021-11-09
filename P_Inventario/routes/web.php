@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('Home');
+})->name('/');
+
+Route::get('Actualizar', function () {
+    return view('Actualizar');
+})->name('Actualizar');
+
+Route::get('Mostrar', function () {
+    return view('Mostrar');
+})->name('Mostrar');
+
+Route::get('Añadir', function () {
+    return view('Añadir');
+})->name('Añadir');
+

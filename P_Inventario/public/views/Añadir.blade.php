@@ -9,17 +9,17 @@
 	<link rel="stylesheet" href="
 	
 	css/normalize.css">
-	<link rel="stylesheet" href="../css/sweetalert2.css">
-	<link rel="stylesheet" href="../css/material.min.css">
-	<link rel="stylesheet" href="../css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="css/sweetalert2.css">
+	<link rel="stylesheet" href="css/material.min.css">
+	<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../js/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="../js/material.min.js" ></script>
-	<script src="../js/sweetalert2.min.js" ></script>
-	<script src="../js/jquery.mCustomScrollbar.concat.min.js" ></script>
-	<script src="../js/main.js" ></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/material.min.js" ></script>
+	<script src="js/sweetalert2.min.js" ></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js" ></script>
+	<script src="js/main.js" ></script>
 </head>
 <body>
 	<!-- Notifications area -->
@@ -110,7 +110,7 @@
 			<nav class="full-width">
 				<ul class="full-width list-unstyle menu-principal">
 					<li class="full-width">
-						<a href="{{route('/')}}" class="full-width">
+						<a href="home.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-view-dashboard"></i>
 							</div>
@@ -121,7 +121,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="{{route('Añadir')}}" class="full-width btn-subMenu">
+						<a href="#!" class="full-width btn-subMenu">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-case"></i>
 							</div>
@@ -137,7 +137,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="{{route('Mostrar')}}" class="full-width">
+						<a href="Mostrar.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-washing-machine"></i>
 							</div>
@@ -148,7 +148,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="{{route('Actualizar')}}" class="full-width">
+						<a href="Actualizar.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-shopping-cart"></i>
 							</div>
@@ -332,8 +332,42 @@
 												<span class="mdl-textfield__error">Invalid password</span>
 											</div>
 										</div>
-										
-										
+										<div class="mdl-cell mdl-cell--12-col">
+									        <legend class="text-condensedLight"><i class="zmdi zmdi-border-color"></i> &nbsp; CHOOSE AVATAR</legend><br>
+									    </div>
+										<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+											<div class="mdl-grid">
+												<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+													<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+														<input type="radio" id="option-1" class="mdl-radio__button" name="options" value="avatar-male.png">
+														<img src="assets/img/avatar-male.png" alt="avatar" style="height: 45px; width="45px;" ">
+														<span class="mdl-radio__label">Avatar 1</span>
+													</label>
+											    </div>
+											    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+													<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+														<input type="radio" id="option-2" class="mdl-radio__button" name="options" value="avatar-female.png">
+														<img src="assets/img/avatar-female.png" alt="avatar" style="height: 45px; width="45px;" ">
+														<span class="mdl-radio__label">Avatar 2</span>
+													</label>
+											    </div>
+											    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+													<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+														<input type="radio" id="option-3" class="mdl-radio__button" name="options" value="avatar-male2.png">
+														<img src="assets/img/avatar-male2.png" alt="avatar" style="height: 45px; width="45px;" ">
+														<span class="mdl-radio__label">Avatar 3</span>
+													</label>
+											    </div>
+											    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+													<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+														<input type="radio" id="option-4" class="mdl-radio__button" name="options" value="avatar-female2.png">
+														<img src="assets/img/avatar-female2.png" alt="avatar" style="height: 45px; width="45px;" ">
+														<span class="mdl-radio__label">Avatar 4</span>
+													</label>
+											    </div>
+											</div>
+										</div>
+									</div>
 									<p class="text-center">
 										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bg-primary" id="btn-addAdmin">
 											<i class="zmdi zmdi-plus"></i>

@@ -1,10 +1,13 @@
-
+<!-- 
+* Copyright 2018 Carlos Eduardo Alfaro Orellana
+  https://www.youtube.com/c/CarlosAlfaro007
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ACTUALIZAR</title>
+	<title>Home</title>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/sweetalert2.css">
 	<link rel="stylesheet" href="../css/material.min.css">
@@ -91,7 +94,7 @@
 		<div class="full-width navLateral-bg btn-menu"></div>
 		<div class="full-width navLateral-body">
 			<div class="full-width navLateral-body-logo text-center tittles">
-				<i class="zmdi zmdi-close btn-menu"></i> INVENTARIO SENA
+				<i class="zmdi zmdi-close btn-menu"></i> Inventory 
 			</div>
 			<figure class="full-width navLateral-body-tittle-menu">
 				<div>
@@ -107,7 +110,7 @@
 			<nav class="full-width">
 				<ul class="full-width list-unstyle menu-principal">
 					<li class="full-width">
-						<a href="{{route('/')}}" class="full-width">
+						<a href="home.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-view-dashboard"></i>
 							</div>
@@ -118,7 +121,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="{{route('Añadir')}}" class="full-width btn-subMenu">
+						<a href="añadir.html" class="full-width btn-subMenu">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-case"></i>
 							</div>
@@ -130,11 +133,23 @@
 						
 					</li>
 					
-						
+						<ul class="full-width menu-principal sub-menu-options">
+							<li class="full-width">
+								<a href="admin.html" class="full-width">
+									<div class="navLateral-body-cl">
+										<i class="zmdi zmdi-account"></i>
+									</div>
+									<div class="navLateral-body-cr">
+										ADMINISTRATORS
+									</div>
+								</a>
+							</li>
+
+						</ul>
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="{{route('Mostrar')}}" class="full-width">
+						<a href="Mostrar.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-washing-machine"></i>
 							</div>
@@ -145,7 +160,7 @@
 					</li>
 					<li class="full-width divider-menu-h"></li>
 					<li class="full-width">
-						<a href="{{route('Actualizar')}}" class="full-width">
+						<a href="Actualizar.html" class="full-width">
 							<div class="navLateral-body-cl">
 								<i class="zmdi zmdi-shopping-cart"></i>
 							</div>
@@ -188,64 +203,118 @@
 				</nav>
 			</div>
 		</div>
-		<section class="full-width header-well">
-			<div class="full-width header-well-icon">
-				<i class="zmdi zmdi-shopping-cart"></i>
-			</div>
-			<div class="full-width header-well-text">
-				<p class="text-condensedLight">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut nulla accusantium minus corporis accusamus fuga harum natus molestias necessitatibus.
-				</p>
+		<section class="full-width text-center" style="padding: 40px 0;">
+			<h3 class="text-center tittles">RESPONSIVE TILES</h3>
+			<!-- Tiles -->
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
+						2<br>
+						<small>Administrators</small>
+					</span>
+				</div>
+				<i class="zmdi zmdi-account tile-icon"></i>
+			</article>
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
+						71<br>
+						<small>Clients</small>
+					</span>
+				</div>
+				<i class="zmdi zmdi-accounts tile-icon"></i>
+			</article>
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
+						7<br>
+						<small>Providers</small>
+					</span>
+				</div>
+				<i class="zmdi zmdi-truck tile-icon"></i>
+			</article>
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
+						9<br>
+						<small>Categories</small>
+					</span>
+				</div>
+				<i class="zmdi zmdi-label tile-icon"></i>
+			</article>
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
+						121<br>
+						<small>Products</small>
+					</span>
+				</div>
+				<i class="zmdi zmdi-washing-machine tile-icon"></i>
+			</article>
+			<article class="full-width tile">
+				<div class="tile-text">
+					<span class="text-condensedLight">
+						47<br>
+						<small>Sales</small>
+					</span>
+				</div>
+				<i class="zmdi zmdi-shopping-cart tile-icon"></i>
+			</article>
+		</section>
+		<section class="full-width" style="margin: 30px 0;">
+			<h3 class="text-center tittles">RESPONSIVE TIMELINE</h3>
+			<!-- TimeLine -->
+			<div id="timeline-c" class="timeline-c">
+				<div class="timeline-c-box">
+	                <div class="timeline-c-box-icon bg-info">
+	                    <i class="zmdi zmdi-twitter"></i>
+	                </div>
+	                <div class="timeline-c-box-content">
+	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
+	                    <p class="text-center">
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
+	                    </p>
+	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>05-04-2016</span>
+	                </div>
+	            </div>
+				<div class="timeline-c-box">
+	                <div class="timeline-c-box-icon bg-success">
+	                    <i class="zmdi zmdi-whatsapp"></i>
+	                </div>
+	                <div class="timeline-c-box-content">
+	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
+	                    <p class="text-center">
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
+	                    </p>
+	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>06-04-2016</span>
+	                </div>
+	            </div>
+	            <div class="timeline-c-box">
+	                <div class="timeline-c-box-icon bg-primary">
+	                    <i class="zmdi zmdi-facebook"></i>
+	                </div>
+	                <div class="timeline-c-box-content">
+	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
+	                    <p class="text-center">
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
+	                    </p>
+	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>07-04-2016</span>
+	                </div>
+	            </div>
+	            <div class="timeline-c-box">
+	                <div class="timeline-c-box-icon bg-danger">
+	                    <i class="zmdi zmdi-youtube"></i>
+	                </div>
+	                <div class="timeline-c-box-content">
+	                    <h4 class="text-center text-condensedLight">Tittle timeline</h4>
+	                    <p class="text-center">
+	                    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nobis rerum iure nostrum dolor. Quo totam possimus, ex, sapiente rerum vel maxime fugiat, ipsam blanditiis veniam, suscipit labore excepturi veritatis.
+	                    </p>
+	                    <span class="timeline-date"><i class="zmdi zmdi-calendar-note zmdi-hc-fw"></i>08-04-2016</span>
+	                </div>
+	            </div>
 			</div>
 		</section>
-		<div class="full-width divider-menu-h"></div>
-		<div class="mdl-grid">
-			<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
-				<div class="table-responsive">
-					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width table-responsive">
-						<thead>
-							<tr>
-								<th class="mdl-data-table__cell--non-numeric">Date</th>
-								<th>Client</th>
-								<th>Payment</th>
-								<th>Total</th>
-								<th>Options</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">11/04/2016</td>
-								<td>Client name</td>
-								<td>Credit</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">11/04/2016</td>
-								<td>Client name</td>
-								<td>Credit</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">11/04/2016</td>
-								<td>Client name</td>
-								<td>Credit</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">11/04/2016</td>
-								<td>Client name</td>
-								<td>Credit</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
 	</section>
 </body>
 </html>
